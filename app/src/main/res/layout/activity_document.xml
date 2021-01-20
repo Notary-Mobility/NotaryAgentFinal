@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.DocumentActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <RelativeLayout
+       android:id="@+id/header"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/darkblue_new"
+       android:padding="5dp">
+       <ImageView
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:padding="5dp"
+           android:src="@drawable/ic_backwhite"/>
+       <TextView style="@style/tv_title"
+           android:text="Add Documents"
+           android:textColor="@color/white"
+           android:layout_centerInParent="true"/>
+   </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/header">
+        <RelativeLayout
+            android:id="@+id/lay_driver_licens"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_marginTop="7dp"
+            android:background="@drawable/border_grey_rec"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/tv_title"
+                android:textColor="@color/darkblue"
+                android:text="@string/driverlicens" />
+
+
+            <ImageView
+                android:id="@+id/img_linces"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_attachment" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/lay_your_photo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_marginTop="7dp"
+            android:background="@drawable/border_grey_rec"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/tv_title"
+                android:textColor="@color/darkblue"
+                android:text="Your photos"/>
+
+
+            <ImageView
+                android:id="@+id/your_photos"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_attachment" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/lay_w9"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/border_grey_rec"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/tv_title"
+                android:textColor="@color/darkblue"
+                android:text="W-9"/>
+
+
+            <ImageView
+                android:id="@+id/img_w9"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_attachment" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/lay_indvi_sign"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_marginTop="7dp"
+            android:background="@drawable/border_grey_rec"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/tv_title"
+                android:textColor="@color/darkblue"
+                android:text="Individual Signing Agent Application"/>
+
+            <ImageView
+                android:id="@+id/img_indvi_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_attachment" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/lay_application"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_marginTop="7dp"
+            android:background="@drawable/border_grey_rec"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/tv_title"
+                android:textColor="@color/darkblue"
+                android:text="Application" />
+
+
+            <ImageView
+                android:id="@+id/img_application"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_attachment" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/lay_notary_agent_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/border_grey_rec"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/tv_title"
+                android:textColor="@color/darkblue"
+                android:text="Notary Agent Agreements"/>
+
+
+            <ImageView
+                android:id="@+id/img_notary_agent_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_attachment" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/lay_copy_of_bond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/border_grey_rec"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/tv_title"
+                android:singleLine="false"
+                android:textColor="@color/darkblue"
+                android:layout_toStartOf="@+id/img_copy_of_bond"
+                android:text="Copy of bond, notary license, Background check required, E&amp;O, (if available)"/>
+
+
+            <ImageView
+                android:id="@+id/img_copy_of_bond"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_attachment" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <Button style="@style/button_primary"
+        android:layout_alignParentBottom="true"
+        android:text="Sent"
+        android:id="@+id/btn_sent"/>
+</RelativeLayout>
+</layout>
