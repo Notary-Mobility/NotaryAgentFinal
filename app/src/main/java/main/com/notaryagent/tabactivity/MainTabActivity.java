@@ -186,7 +186,7 @@ public class MainTabActivity extends BaseActivity {
 
                     JSONObject data = null;
                     try {
-//                        new GetCurrentBooking().execute();
+                        new GetCurrentBooking().execute();
                         data = new JSONObject(message);
                         String keyMessage = data.getString("key").trim();
                         Log.e("KEY_HOME =", "" + keyMessage);
