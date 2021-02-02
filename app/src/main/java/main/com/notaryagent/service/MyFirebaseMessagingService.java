@@ -131,7 +131,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
                 if (keyMessage.equalsIgnoreCase("your booking request is Now")){
                     NotificationUtils notificationUtils = new NotificationUtils(getApplicationContext());
                     notificationUtils.playNotificationSoundRingtone();
-                    //notificationUtils.playNotificationSound();
+//                    notificationUtils.playNotificationSound();
                 }
                 else {
                     NotificationUtils notificationUtils = new NotificationUtils(getApplicationContext());

@@ -8,8 +8,8 @@ public class BaseUrl {
     public static String LiveServer="https://www.notarymobility.com/";
     public static String DevServer="https://dev.notarymobility.com/";
     public static String TestServer="https://test.notarymobility.com/";
-    public static String baseurl=DevServer+"notary/webservice/";
-    public static String image_baseurl=DevServer+"notary/uploads/images/";
+    public static String baseurl=LiveServer+"notary/webservice/";
+    public static String image_baseurl=LiveServer+"notary/uploads/images/";
     public static String stripe_publish="pk_test_3oQpHM18Yv2mFAK6vSE5I1oz";
     public static String websiturl="http://www.notarymobility.com";
     public static String terms=LiveServer+"notary/terms.html";

@@ -25,7 +25,6 @@ import android.text.Html;
 import android.text.TextUtils;
 import android.util.Log;
 import android.util.Patterns;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
@@ -34,7 +33,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-
 import main.com.notaryagent.R;
 import main.com.notaryagent.app.Config;
 
@@ -72,8 +70,6 @@ public class NotificationUtils {
             notificati`on.setSmallIcon(R.drawable.icon);
         }*/
 
-
-
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         final PendingIntent resultPendingIntent =
                 PendingIntent.getActivity(
@@ -110,7 +106,7 @@ public class NotificationUtils {
             }
         } else {
             showSmallNotification(mBuilder, icon, title, message, timeStamp, resultPendingIntent, alarmSound);
-            //playNotificationSound();
+            playNotificationSound();
         }
     }
 
@@ -137,6 +133,7 @@ public class NotificationUtils {
             notificationChannel.enableVibration(true);
             notificationManager.createNotificationChannel(notificationChannel);
         }
+
         NotificationCompat.Builder builder = new NotificationCompat.Builder(mContext, NOTIFICATION_CHANNEL_ID)
                 .setVibrate(new long[]{0, 100, 100, 100, 100, 100})
                 //.setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION))
